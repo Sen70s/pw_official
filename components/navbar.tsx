@@ -17,9 +17,7 @@ import React from "react";
 import { Image } from "@nextui-org/image";
 
 import { siteConfig } from "@/config/site";
-import {
-  SearchIcon,
-} from "@/components/icons";
+import { SearchIcon } from "@/components/icons";
 
 export const Navbar = () => {
   const searchInput = (
@@ -45,7 +43,6 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
-
       {/* 头 */}
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         {/* LOGO */}
