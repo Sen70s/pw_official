@@ -1,79 +1,66 @@
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
-import { button as buttonStyles } from "@nextui-org/theme";
 import React from "react";
-import { Button } from "@nextui-org/react";
-import { Image } from "@nextui-org/image"
-import { Card, CardFooter } from "@nextui-org/card";
 
-
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 
 export default function IndexPage() {
-
   const posts = [
     {
       id: 1,
-      title: 'OpenRoad',
-      href: '#',
-      description:
-        'A Edu. App.',
-      date: 'Mar 16, 2020',
-      datetime: '2020-03-16',
-      category: { title: 'APP', href: '#' },
+      title: "OpenRoad",
+      href: "#",
+      description: "A Edu. App.",
+      date: "Mar 16, 2020",
+      datetime: "2020-03-16",
+      category: { title: "APP", href: "#" },
       imageUrl:
-        'https://images.ctfassets.net/kftzwdyauwt9/1XeXlBlWdUBSPFcVPsOmOD/dc8123f1031a0f9fe1b816790ee510a9/Structured_Outputs_Cover.png?w=640&q=90&fm=webp',
+        "https://images.ctfassets.net/kftzwdyauwt9/1XeXlBlWdUBSPFcVPsOmOD/dc8123f1031a0f9fe1b816790ee510a9/Structured_Outputs_Cover.png?w=640&q=90&fm=webp",
     }, {
       id: 2,
-      title: 'Smuggling Archives',
-      href: '#',
-      description:
-        'A RPG game.',
-      date: 'Mar 16, 2020',
-      datetime: '2020-03-16',
-      category: { title: 'GAME', href: '#' },
+      title: "Smuggling Archives",
+      href: "#",
+      description: "A RPG game.",
+      date: "Mar 16, 2020",
+      datetime: "2020-03-16",
+      category: { title: "GAME", href: "#" },
       imageUrl:
-        'https://images.ctfassets.net/kftzwdyauwt9/3qxnep8UZm6mNuXeEY6OxW/41a11c729769d54ce18954040b3dfce0/start-building-and-api-call.jpg?w=640&q=90&fm=webp',
-    }, 
-  ]
+        "https://images.ctfassets.net/kftzwdyauwt9/3qxnep8UZm6mNuXeEY6OxW/41a11c729769d54ce18954040b3dfce0/start-building-and-api-call.jpg?w=640&q=90&fm=webp",
+    }
+  ];
 
   const links = [
-    { name: '校园招新', href: 'https://pointerwander.feishu.cn/share/base/form/shrcnhSUU6PLjJ4y9SWr3BcxJCe' },
-  ]
+    { name: "校园招新", href: "https://pointerwander.feishu.cn/share/base/form/shrcnhSUU6PLjJ4y9SWr3BcxJCe" }
+  ];
 
   const stats = [
-    { name: '技术密集型工作室', value: '技术漫游世界 代码缔造未来' },
-    { name: '价值观', value: '好好工作 好好学习 好好玩耍' },
-    { name: '成员激励', value: '丰厚成员激励金' }
-  ]
+    { name: "技术密集型工作室", value: "技术漫游世界 代码缔造未来" },
+    { name: "价值观", value: "好好工作 好好学习 好好玩耍" },
+    { name: "成员激励", value: "丰厚成员激励金" }
+  ];
 
   const features = [
-    { name: '专利申请', description: '您作为第一权利人或参与人，参与申请专利。' },
-    { name: '软件著作权', description: '工作室将您作为参与人申请软件著作权。' },
-    { name: '挑战杯', description: '挑战自我，发展自我，成就自我。' },
-    { name: '创新创业大赛', description: '致力于培养双创人才。' },
-    { name: '计算机设计大赛', description: '专业技能竞赛' },
-    { name: 'And More', description: '更多机会只看你自己，有能力我们就助推。' },
-  ]
+    { name: "专利申请", description: "您作为第一权利人或参与人，参与申请专利。" },
+    { name: "软件著作权", description: "工作室将您作为参与人申请软件著作权。" },
+    { name: "挑战杯", description: "挑战自我，发展自我，成就自我。" },
+    { name: "创新创业大赛", description: "致力于培养双创人才。" },
+    { name: "计算机设计大赛", description: "专业技能竞赛" },
+    { name: "And More", description: "更多机会只看你自己，有能力我们就助推。" },
+  ];
 
-  
+
   return (
     <DefaultLayout>
 
       <section className="flex flex-col items-center justify-center gap-4 py-4 md:py-10">
 
-        <div 
+        <div
           className=" animate-pulse 
         inline-block text-center justify-center w-11/12 h-[40rem] align-middle content-center rounded-lg 
         bg-[url('https://images.ctfassets.net/kftzwdyauwt9/3H5j3oawTq7P42sqqfaVFp/6fba4c7e9c4b9e465d7cfb576f609249/oai_o1_preview_bg.png?w=1920&q=90&fm=webp')]
         "
         >
           <h1 className={title()}>Roaming the world , endless possibilities .</h1>
-          
+
         </div>
 
         <div className="py-24 sm:py-32 min-w-7xl" >
@@ -157,7 +144,7 @@ export default function IndexPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Studio Training Range</h2>
               <p className="mt-4 text-gray-500">
-                Cultivate, for better development.<br/>
+                Cultivate, for better development.<br />
                 右侧素材均来自OpenAi
               </p>
 
@@ -173,10 +160,10 @@ export default function IndexPage() {
             <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
               <img
                 src="https://images.ctfassets.net/kftzwdyauwt9/7i9gjVSZuEn0yoN8rbG3KR/1dc876729a6b7a4baafbc4a848055e81/guides.gif?w=640&q=90&fm=webp&fit=pad"
-                className="rounded-lg bg-gray-100" 
+                className="rounded-lg bg-gray-100"
               />
               <video muted autoPlay loop className="rounded-lg w-[268] h-[268] object-cover">
-                <source src="https://cdn.openai.com/chatgpt/Comp_1_1.mp4"/>
+                <source src="https://cdn.openai.com/chatgpt/Comp_1_1.mp4" />
               </video>
               <video muted autoPlay loop className="rounded-lg w-[268] h-[268] object-cover">
                 <source src="https://cdn.openai.com/sora/videos/paper-airplanes.mp4" />
@@ -199,7 +186,7 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
-        
+
 
 
       </section>

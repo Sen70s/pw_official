@@ -53,7 +53,7 @@ export const Navbar = () => {
           <NextLink className="flex justify-center items-center gap-1" href="/">
             <Image
               width={30}
-              radius = "none"
+              radius="none"
               src="/favicon.png"
               alt="PointerWander"
             />
