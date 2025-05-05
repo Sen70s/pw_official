@@ -2,7 +2,7 @@ import './App.css';
 import LogoShape from './component/LogoShape';
 
 import logo_openroad from './img/logo_openroad.png'
-import logo_serenest from './img/logo_serenest.png'
+import logo_serenest from './img/logo_Serenest.png'
 import logo_retrosol from './img/logo_retrosol.png'
 
 import bg_index from './img/bg_index.jpg'
